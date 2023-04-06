@@ -1,0 +1,232 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+.search>button{
+    border:2px solid darkcyan;
+    background: white;
+    font-size :20px;
+    color:white;
+    background: darkcyan;  
+    margin-left: 2px;
+}
+
+.search{
+    width: 60%;
+    display: flex;
+    height: 40px;
+    max-width: 800px;
+    min-width: 300px;
+
+}
+.searchbox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    font-size: 30px;
+    box-sizing: border-box;
+    /* flex: 1; */
+    padding: 10px 5px;
+    border: 2px solid darkcyan;
+}
+.searchbox input{
+    flex: 1;
+    font-size: 20px;
+    outline: none !important;
+    border: none;
+}
+.searchbox svg{
+    font-size: 24px;
+    fill:  darkcyan ;
+
+
+}
+.logo{
+    font-size: 36px;
+    font-weight: bold;
+    color: darkcyan;
+}
+.user{
+    display: flex;
+    align-items: center;
+
+}
+.user button{
+    background: none;
+    border: 2px solid darkcyan;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    color: darkcyan;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 160px;
+    opacity: .8;
+    width: 100%;
+}
+
+.picture{
+    padding-top: 400px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 3px 10px #777, -2px -3px 8px #999;
+}
+.picture:hover{
+    padding-top:240px ;
+    transform: scale(1.02);
+}
+
+.delete{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+    
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.edit{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 45px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+   
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.edit svg, .delete svg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+   
+}
+
+.options{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -100%;
+    width: 25%;
+    transition: all 0.5s ease-in;
+    height: 50px;
+}
+
+
+.add{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    background: #1115;
+
+}
+
+.add-main{
+    background: #fff;
+    box-shadow: 2px 3px 10px #444, 2px 3px 10px #555;
+    flex-direction: column;
+    gap: 20px;
+    padding: 150px;
+    position: relative;
+}
+
+.add-main>div{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+
+
+}
+.add-main> button{
+    position: absolute;
+    top :10px;
+    right :10px;
+}
+
+
+.upload-area{
+    border: 2px solid darkcyan;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+ 
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.upload-area svg{
+    font-size:100px;
+    fill: darkcyan !important;
+
+}
+
+.add-main input{
+    box-sizing: border-box;
+    border: 2px solid darkcyan;
+    outline: none;
+    height: 40px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+.add-main button{
+    box-sizing: border-box;
+    border: 2px solid darkcyan;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: darkcyan;
+}
+
+
+.upload-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
