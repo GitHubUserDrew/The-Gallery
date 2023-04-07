@@ -4,6 +4,7 @@ import { register } from "../store/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import './css/login.css'
 
 export default function Register({}) {
   const [username, setUsername] = useState("");
