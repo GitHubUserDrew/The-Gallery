@@ -9,8 +9,10 @@ app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use(cookieParser())
 const authRouter = require("./auth/auth")
 mongoose.connect(process.env.MONGODB_URI)
-app.use("/auth", authRouter)
 app.use(express.static(__dirname+ '/client/build'));
+app.get("/", (req, res)=> res.sendFile(__dirname +"./client/build/index.html"))
+app.use("/auth", authRouter)
+
 app.use(require('./middlewares/authenticate'));
 
 app.use("/api", require('./api/api'))
